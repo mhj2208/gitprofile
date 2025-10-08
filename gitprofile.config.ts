@@ -29,15 +29,27 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'Featured',
-      // To hide the `External Projects` section, keep it empty.
-    
+      header: 'About & Ongoing',
+      projects: [
+        {
+          title: 'About Me',
+          description:
+            '성균관대학교 인공지능융합학과 재학 중. 딥러닝, 데이터 분석, 영화 연출 등 다양한 분야에 관심이 있습니다'
+        },
+        {
+          title: 'Ongoing Projects',
+          description:
+            'AI 생성 이미지 분류 연구 프로젝트 : 인공지능융합전공 학회 BRAIN에서 최신 논문을 바탕으로 Masking 기법에서의 조정을 통해 ai생성 이미지를 구별하는 방법을 연구중.'
+        }
+      ]
+      // To hide the External Projects section, keep it empty.
     },
   },
+
   seo: {
     title: 'Portfolio of mhj2208',
     description: 'Personal portfolio and projects by mhj2208',
-    imageURL: '' 
+    imageURL: '',
   },
   social: {
     email: 'mhj2208@gmail.com',
@@ -57,32 +69,27 @@ const CONFIG = {
       from: '2024',
       to: 'Present',
       companyLink: ' ',
-    }
-    
+    },
   ],
-  certifications: [
-    
-  ],
+  certifications: [],
   educations: [
     {
       institution: 'SKKU (Sungkyunkwan University)',
       degree: 'Artificial Intelligence - Sophomore',
       from: '2024',
       to: 'Present',
-    }
+    },
   ],
-  publications: [
-    
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
-  
+
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'cupcake',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
